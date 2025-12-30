@@ -1,22 +1,4 @@
-<div style="position: relative; width: 300px; margin: 40px auto;">
-  
- >
-  <img src="cp1.png" 
-       style="width: 100%; border-radius: 12px;" />
-
- >
-  <img src="cp2.png"
-       style="
-         position: absolute;
-         top: -20px;
-         right: -20px;
-         width: 90%;
-         transform: rotate(45deg);
-         opacity: 0.8;
-         border-radius: 12px;
-         box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-       " />
-</div>
+![Logo](cp2.png)
 
 # Amine Portfolio Showcase 💻
 
