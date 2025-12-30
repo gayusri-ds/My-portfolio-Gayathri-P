@@ -1,4 +1,4 @@
-![Logo](cp2.png)
+![Logo](cp.png)
 
 # Amine Portfolio Showcase 💻
 
