@@ -7,120 +7,267 @@
 
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+<style>
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f7fa;
+    color: #1f2937;
+}
+
+header {
+    background: #111827;
+    padding: 15px 0;
+}
+
+.ul-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.ul-list a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.ul-list a:hover {
+    color: #38bdf8;
+}
+
+section {
+    padding: 60px 10%;
+}
+
+.home {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 100px 10%;
+}
+
+.home h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.home h3 {
+    font-weight: 400;
+    color: #38bdf8;
+}
+
+.btn-home1, .btn-home2 {
+    padding: 10px 20px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.btn-home1 {
+    background: #38bdf8;
+    color: white;
+}
+
+.btn-home2 {
+    background: white;
+    color: #111827;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+.skills span {
+    background: #e0f2fe;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #2563eb;
+    font-weight: 500;
+}
+
+#skills .skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+
 </head>
 
 <body>
 
-<div id="real-site">
 <header>
-    <div class="div-list ">
-        <ul class="ul-list">
-            <li class="active"><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#project">Projects</a></li>
-            <li><a href="#service">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
+    <ul class="ul-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
 </header>
 
 <section class="home" id="home">
-    <div class="home-container">
-        <div class="home-section">
-            <div class="info-home">
-                <h1>Hi, I'm Gayathri P</h1>
-                <h3>Data Analyst / Junior Data Scientist</h3>
+    <h1>Hi, I'm Gayathri P</h1>
+    <h3>Data Analyst | Junior Data Scientist</h3>
 
-                <div class="info-p">
-                    <p>Aspiring Data Analyst with strong foundation in Mathematics and hands-on experience</p>
-                    <p>in Data Analysis, Machine Learning, and Data Visualization.</p>
-                    <p>Skilled in Python, SQL, Excel, Power BI and business analytics.</p>
-                </div>
+    <p>Aspiring Data Analyst with strong mathematical foundation and hands-on experience in analytics, forecasting, and machine learning.</p>
+    <p>Skilled in Python, SQL, Excel, Power BI, and business analytics.</p>
 
-                <div class="info-p2">
-                    <p><i class="fa-solid fa-location-dot"></i> Based in India</p>
-                    <p><i class="fa-solid fa-briefcase"></i> Open to Opportunities</p>
-                </div>
-
-                <div class="btnn">
-                    <a href="#contact"><button class="btn-home1">Hire Me</button></a>
-                    <a href="#"><button class="btn-home2">Download Resume</button></a>
-                </div>
-            </div>
-        </div>
+    <div>
+        <a href="#contact"><button class="btn-home1">Hire Me</button></a>
+        <a href="Gayathri_Resume.pdf" download>
+            <button class="btn-home2">Download Resume</button>
+        </a>
     </div>
 </section>
 
-<section class="about" id="about">
-    <h3>ABOUT ME</h3>
-    <div class="about-info2">
-        <div class="about-text">
-            <p>Hi, I'm Gayathri P, an aspiring Data Analyst and Junior Data Scientist with a strong academic background in Mathematics and hands-on experience in data analysis, machine learning, and data visualization.</p>
-            <p>I have worked on real-world projects including time series forecasting, NLP-based recommendation systems, and deep learning models.</p>
-            <p>I enjoy working with data, extracting insights, and building solutions that support business decision-making.</p>
-
-            <p>Currently skilled in:</p>
-            <p># Python, SQL, Excel, Power BI</p>
-            <p># Data Cleaning, EDA, Feature Engineering</p>
-            <p># Machine Learning, Deep Learning, NLP</p>
-        </div>
-    </div>
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am an aspiring Data Analyst with a strong background in Mathematics and practical experience in building data-driven solutions.</p>
+    <p>I have worked on time series forecasting, NLP-based recommendation systems, and deep learning projects.</p>
+    <p>I enjoy extracting insights from data and building analytical solutions that support business decision-making.</p>
 </section>
 
-<section class="project" id="project">
-    <h1>Projects</h1>
+<section id="projects">
+    <h2>Projects</h2>
 
     <div class="projects-container">
 
         <div class="project-card">
             <h3>Carbon Emission Forecasting</h3>
-            <p>Built LSTM, GRU, and RNN models to predict emission trends using deep learning.</p>
+            <p><strong>Problem:</strong> Predict future carbon emission trends using historical environmental data.</p>
+            <p><strong>Approach:</strong> Built LSTM, GRU, and RNN models after preprocessing and scaling time-series data.</p>
+            <p><strong>Impact:</strong> Improved forecasting accuracy and identified long-term emission growth patterns.</p>
             <div class="skills">
-                <a>Python</a><a>TensorFlow</a><a>Pandas</a>
+                <span>Python</span>
+                <span>TensorFlow</span>
+                <span>Pandas</span>
+                <span>Time Series</span>
             </div>
+            <a href="https://github.com/gayusri-ds" target="_blank" class="project-link">View Project →</a>
         </div>
 
         <div class="project-card">
-            <h3>Lyric-Based Music Recommendation System</h3>
-            <p>Built NLP-based recommendation system using TF-IDF and cosine similarity.</p>
+            <h3>Lyric-Based Music Recommendation</h3>
+            <p><strong>Problem:</strong> Recommend songs based on lyrical similarity.</p>
+            <p><strong>Approach:</strong> Used TF-IDF vectorization and cosine similarity for content-based filtering.</p>
+            <p><strong>Impact:</strong> Built an NLP-powered recommendation engine improving content relevance.</p>
             <div class="skills">
-                <a>Python</a><a>NLP</a><a>Scikit-learn</a>
+                <span>Python</span>
+                <span>NLP</span>
+                <span>Scikit-learn</span>
             </div>
+            <a href="https://github.com/gayusri-ds" target="_blank" class="project-link">View Project →</a>
         </div>
 
         <div class="project-card">
             <h3>Face Recognition System</h3>
-            <p>Built face recognition system using SSD, FaceNet, and SVM with 95% accuracy.</p>
+            <p><strong>Problem:</strong> Develop an automated facial recognition system.</p>
+            <p><strong>Approach:</strong> Used SSD for detection, FaceNet for embeddings, and SVM for classification.</p>
+            <p><strong>Impact:</strong> Achieved 95% classification accuracy on validation dataset.</p>
             <div class="skills">
-                <a>Python</a><a>Deep Learning</a><a>OpenCV</a>
+                <span>Python</span>
+                <span>Deep Learning</span>
+                <span>OpenCV</span>
             </div>
+            <a href="https://github.com/gayusri-ds" target="_blank" class="project-link">View Project →</a>
         </div>
 
     </div>
 </section>
 
-<section id="service">
-    <h1>Core Skills</h1>
-    <ul style="text-align:center; list-style:none;">
-        <li>✔ Data Analysis & Reporting</li>
-        <li>✔ Power BI Dashboard Development</li>
-        <li>✔ SQL & Excel Analytics</li>
-        <li>✔ Machine Learning Models</li>
-        <li>✔ Data Cleaning & Preprocessing</li>
-        <li>✔ Forecasting & Prediction Systems</li>
-    </ul>
+<section id="skills">
+    <h2>Technical Skills</h2>
+
+    <div class="skills-container">
+        <div>
+            <h3>Languages</h3>
+            <p>Python, SQL</p>
+        </div>
+
+        <div>
+            <h3>Data Tools</h3>
+            <p>Excel, Power BI, Pandas, NumPy</p>
+        </div>
+
+        <div>
+            <h3>Machine Learning</h3>
+            <p>Regression, Classification, NLP, Deep Learning</p>
+        </div>
+
+        <div>
+            <h3>Concepts</h3>
+            <p>EDA, Feature Engineering, Model Evaluation, Forecasting</p>
+        </div>
+    </div>
 </section>
 
 <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: gayumath99@gmail.com</p>
-    <p>Phone: +91 9444426623</p>
-    <p>GitHub: <a href="https://github.com/gayusri-ds" target="_blank">github.com/gayusri-ds</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/gayathri-p-186171309" target="_blank">View Profile</a></p>
+    <h2>Get In Touch</h2>
+    <p>I am open to Data Analyst and Junior Data Scientist opportunities.</p>
+
+    <p><strong>Email:</strong>
+        <a href="mailto:gayumath99@gmail.com">gayumath99@gmail.com</a>
+    </p>
+
+    <p><strong>GitHub:</strong>
+        <a href="https://github.com/gayusri-ds" target="_blank">github.com/gayusri-ds</a>
+    </p>
+
+    <p><strong>LinkedIn:</strong>
+        <a href="https://www.linkedin.com/in/gayathri-p-186171309" target="_blank">LinkedIn Profile</a>
+    </p>
 </section>
 
-</div>
+<footer>
+    <p>© 2026 Gayathri P | Data Analyst Portfolio</p>
+</footer>
+
 </body>
 </html>
+
